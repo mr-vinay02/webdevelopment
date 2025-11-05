@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+
+    <fieldset>
+
+        <legend style="color: red; font-weight: bold;font-size: 18px;">Personal Information</legend>
+    <form action="/submit" method="post" class="form">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120">
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="gender-male">
+                <input type="radio" name="gender" id="gender-male" value="male" required>
+                Male
+            </label>
+            <label for="gender-female">
+                <input type="radio" name="gender" id="gender-female" value="female">
+                Female
+            </label>
+            <label for="gender-other">
+                <input type="radio" name="gender" id="gender-other" value="other">
+                Other
+            </label>
+        </fieldset>
+
+        <label for="country">country :</label>
+
+        <select name="country" id="country">
+            <option value="country">India</option>
+            <option value="country">USA</option>
+            <option value="country">UAE</option>
+        </select>
+
+        
+        <fieldset id = "final">
+            <input type="submit" value="Register">
+
+            <input type="reset" value="Reset">
+        </fieldset>
+        
+
+    </form>
+
+    </fieldset>
+
+</body>
+</html>
