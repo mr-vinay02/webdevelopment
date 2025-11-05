@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouped Form Example</title>
+</head>
+
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form action="submit.html" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select><br><br>
+
+            <p>Preferred Learning Mode:</p>
+            <input type="radio" id="online" name="mode" value="Online" checked>
+            <label for="online">Online</label>
+            <input type="radio" id="offline" name="mode" value="Offline">
+            <label for="offline">Offline</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login Info</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+
+</html>
