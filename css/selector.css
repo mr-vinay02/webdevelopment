@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header-class {
+    text-align: center;
+}
+
+#header {
+    font-size: 20px;
+    color: blue;
+    text-transform: capitalize;
+}
+
+#paragraph {
+    font-size: 15px;
+    color: aqua;
+    width: 70%;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+#image {
+    display: block;
+    margin: 20px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.list {
+    color: cadetblue;
+    text-align: left;
+    margin: 30px auto;
+    width: 50%;
+}
+
+.list h2 {
+    color: lightcoral;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.list ol,
+.list ul {
+    text-align: left;
+    font-size: 20px;
+}
