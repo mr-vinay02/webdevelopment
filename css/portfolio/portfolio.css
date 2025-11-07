@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f1e8;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.btn {
+    background-color: #ffb400;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    background-color: #1d3a32;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    opacity: 0.4;
+    margin-top: -40px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffb400;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* About */
+.about {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.linkedin {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Education */
+.education {
+    background-color: #1d3a32;
+    color: #fff;
+    padding: 80px;
+}
+
+.education h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.education ul li {
+    margin-bottom: 10px;
+}
+
+/* Experience */
+.experience {
+    background: #ffb400;
+    padding: 80px;
+}
+
+.experience h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+    background-color: #1d3a32;
+    color: #fff;
+    padding: 80px;
+}
+
+.skills h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    background-color: #fff;
+    padding: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+}

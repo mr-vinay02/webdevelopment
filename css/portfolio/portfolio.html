@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darshan Ronad | Data Analyst Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar h2 {
+            font-size: 1.4rem;
+            color: #111;
+            margin-bottom: 0.3rem;
+        }
+
+        .sidebar p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .nav-links {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            font-weight: 500;
+            transition: all 0.3s;
+            border-radius: 6px;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+            padding-top: 1rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 3rem 5rem;
+            background-color: #f9fbfd;
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.05rem;
+            color: #555;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            margin: 5px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin-top: 1rem;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-around;
+                border-bottom: 1px solid #ddd;
+                border-right: none;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 2rem;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="darshan.jpg" alt="Darshan Ronad">
+        <h2>Darshan Ronad</h2>
+        <p>Data Analyst | Bengaluru, India</p>
+
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <footer>
+            <p>© 2025 Darshan Ronad<br>Designed with ❤️</p>
+        </footer>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="home">
+            <h1>I am a <span style="color:#007bff;">Data Analyst</span></h1>
+            <p>Turning raw data into meaningful insights that drive business success. Skilled in Python, SQL, and Power
+                BI with a focus on analytics and business intelligence.</p>
+            <a href="#projects" class="button">View Portfolio</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an enthusiastic Data Analyst passionate about transforming data into insights. I love solving
+                real-world problems using data and creating dashboards that drive smart decisions. Currently pursuing my
+                B.E. in Computer Science from GM Institute of Technology, Davangere.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Scikit-learn</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Coffee Shop Sales Analysis</strong> — <a
+                        href="https://github.com/DarshanJRonad/Coffee-Shop-Sales.git">GitHub</a></li>
+                <li><strong>Uber Trip Analytics Dashboard</strong> — <a
+                        href="https://github.com/DarshanJRonad/Uber-Trip-Analytics.git">GitHub</a></li>
+                <li><strong>Motorola Mobile Sales Analysis</strong> — <a
+                        href="https://github.com/DarshanJRonad/Motorola_Mobile_Sales.git">GitHub</a></li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Data Analyst Intern | Palle Technologies</strong><br>
+                <em>Feb 2025 – Present | Bommanahalli, Bengaluru</em>
+            </p>
+            <ul>
+                <li>Streamlined data collection and reporting, reducing time by 20%.</li>
+                <li>Designed Power BI dashboards to visualize key KPIs.</li>
+                <li>Automated reporting processes, reducing manual work by 40%.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>B.E. in Computer Science | GM Institute of Technology, Davangere (2021–2025)</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>📧 <a href="mailto:darshanronad@gmail.com">darshanronad@gmail.com</a></p>
+            <p>📞 7760852441</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/darshan-ronad/">LinkedIn Profile</a></p>
+            <p>💻 <a href="https://github.com/DarshanJRonad">GitHub Profile</a></p>
+        </section>
+    </div>
+
+    <!-- Active link highlight script -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
