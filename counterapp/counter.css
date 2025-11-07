@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#element{
+    font-size: 100px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+
+#increase{
+    color: rgb(13, 161, 25);
+    background-color: black;
+}
+
+#decrease{
+    color: red;
+    background-color: black;
+}
+
+#reset{
+    color: blue;
+    background-color: black;
+}
+
+div{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
